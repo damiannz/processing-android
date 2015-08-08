@@ -19,7 +19,7 @@
     <available file="${env.ANDROID_SDK}/platforms/android-15/android.jar"
 	       property="andoid-jar-present" />
     <fail unless="andoid-jar-present" 
-	  message="Android SDK 10 could not be found in ${env.ANDROID_SDK}/platforms/android-15/android.jar" />
+	  message="Android SDK 15 could not be found in ${env.ANDROID_SDK}/platforms/android-15/android.jar" />
   </target>
 
   <target name="actual_build" if="env.ANDROID_SDK">
